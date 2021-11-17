@@ -1,9 +1,15 @@
+- install.sh opens firedoge in a page and waits until user installs all addons (ubo, frame, ipfs, nth, new tab, 2read, file z)
+- addons are installed? patch user.js to organize positions
+- if not the first time using, dont write default session (prevent data loss when user is re-installing)
+- Default session: first page welcoming to Firedoge
+
 - Detect if x86 32 or 64 bit
+- Custom build (icon, name)
+- hicolor and .desktop icon
 
 https://stackoverflow.com/questions/3075682/how-to-set-the-process-name-of-a-shell-script
 
 first step: script installs firefox and turns into plasmozill firefloflis:
-- enable flags (layout.css.backdrop-filter.enabled, gfx.webrender.all, browser.tabs.tabClipWidth to 83, security.insecure_connection_text.enabled to true, svg.context-properties.content.enabled to true and others)
 - some personalizations, copy from testing user folder (Install the Firefox extension Simple new tab button (https://addons.mozilla.org/en-US/firefox/addon/simple-new-tab-button/).
 Select Menu > Customize.
 Remove the "new tab button" on Firefox's tab bar using drag and drop.
