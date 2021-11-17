@@ -1,0 +1,60 @@
+- Detect if x86 32 or 64 bit
+
+https://stackoverflow.com/questions/3075682/how-to-set-the-process-name-of-a-shell-script
+
+first step: script installs firefox and turns into plasmozill firefloflis:
+- enable flags (layout.css.backdrop-filter.enabled, gfx.webrender.all, browser.tabs.tabClipWidth to 83, security.insecure_connection_text.enabled to true, svg.context-properties.content.enabled to true and others)
+- some personalizations, copy from testing user folder (Install the Firefox extension Simple new tab button (https://addons.mozilla.org/en-US/firefox/addon/simple-new-tab-button/).
+Select Menu > Customize.
+Remove the "new tab button" on Firefox's tab bar using drag and drop.
+Move the new tab button of the Simple new tab button extension to the rightmost location on the tab bar of the browser. This places the new tab button at a fixed location on the rightmost side of the tab bar in Firefox.
+Restart Firefox.)
+- install addons
+- install, configure and start IPFS Desktop
+https://github.com/intika/Librefox
+-
+https://askubuntu.com/questions/984136/how-to-recompile-firefox-57-debian-package-using-debuild
+https://support.mozilla.org/en-US/kb/performance-settings
+-
+- newtab have an first storage use: firstinstall
+- if its firstinstall, newtab checks if binary is installed and asks to install it
+-
+- Google as default search engine, but offer Qwant
+
+(Reading database ... 269490 files and directories currently installed.)
+Preparing to unpack ipfs-desktop-0.13.2-linux-amd64.deb ...
+Unpacking ipfs-desktop (0.13.2) ...
+Setting up ipfs-desktop (0.13.2) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu1) ...
+Processing triggers for desktop-file-utils (0.24-1ubuntu3) ...
+Processing triggers for mime-support (3.64ubuntu1) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+-
+https://developer.gnome.org/integration-guide/stable/desktop-files.html.en
+https://stackoverflow.com/questions/13632385/adding-menu-items-to-gnome-menu-or-unity
+/usr/share/icons/hicolor
+
+Also include Fhrome:
+tar --verbose -xf ungoogled-chromium_87.0.4280.141-1.1_linux.tar.xz
+
+You want to install Firefloflis or Fhrome?
+You want to install only Firefloflis or also Fhrome?
+
+use in fhrome:
+https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn
+https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg
+https://chrome.google.com/webstore/detail/ipfs-companion/nibjojkomfdiaoajekhjakgkdhaomnch
+https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm
+experiment:
+https://addons.mozilla.org/pt-BR/firefox/addon/archiveror/
+https://chrome.google.com/webstore/detail/archiveror/cpjdnekhgjdecpmjglkcegchhiijadpb
+-
+https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg
+https://chrome.google.com/webstore/detail/the-great-discarder/jlipbpadkjcklpeiajndiijbeieicbdh
+-
+https://chromium.woolyss.com/#external-extension-installation
+https://chromium.googlesource.com/chromium/src/+/master/docs/user_data_dir.md
+-
+https://www.google.com/search?ei=VZIYYMKAMP2x5NoPm6GRyA0&q=chromium+install+crx+from+command+line&oq=chromium+install+crx+from+command+line&gs_lcp=CgZwc3ktYWIQAzoECAAQR1DxEljKG2DgIWgAcAJ4AIABwQKIAdEHkgEFMi0zLjGYAQCgAQGqAQdnd3Mtd2l6yAEDwAEB&sclient=psy-ab&ved=0ahUKEwiC_5X37snuAhX9GFkFHZtQBNkQ4dUDCA0&uact=5
+https://stackoverflow.com/questions/16800696/how-install-crx-chrome-extension-via-command-line
+https://superuser.com/questions/1603392/how-to-install-google-chrome-crx-extension-from-command-line
