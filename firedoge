@@ -1,4 +1,6 @@
 #!/bin/bash
 
-cd /usr/lib/floflis/browser/firedoge
-./firefox
+#cd /usr/lib/floflis/browser/firedoge
+#./firefox
+
+/usr/lib/floflis/browser/firedoge/./firefox $@
