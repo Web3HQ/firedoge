@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo "Installing Plasmozill Firedoge..."
 tar --verbose -xf include/firefox/firefox-95.0b8.linux-x86_64.tar.bz2
 sudo mkdir /usr/lib/floflis
@@ -6,6 +7,8 @@ sudo mkdir /usr/lib/floflis/browser
 sudo mv -f firefox /usr/lib/floflis/browser/firefox
 rsync -av /usr/lib/floflis/browser/firefox/ /usr/lib/floflis/browser/firedoge
 sudo rm -rf /usr/lib/floflis/browser/firefox
+rsync -av include/pages/firstpage/ /usr/lib/floflis/browser/firedoge/defaults/firstpage
+cp -f powers.sh /usr/lib/floflis/browser/firedoge/powers.sh
 echo "- Installing Firefloflis in /usr/bin..."
 #sudo cat > /usr/bin/firedoge << ENDOFFILE
 ##!/bin/bash
@@ -27,7 +30,7 @@ echo "Creating settings profile..."
 echo "[i] Its normal that your browser opens and closes."
 #firedoge
 #firedoge & disown firedoge 
-(firedoge &) # give time for it to create a user profile
+(firedoge -new-tab -url file:///usr/lib/floflis/browser/firedoge/defaults/firstpage/creatingprofile.html &) # give time for it to create a user profile
 
 echo "Detecting username..."
 if [ -f /etc/floflis-release ]
@@ -51,7 +54,7 @@ proceedpersonalizing () {
 #   cp -f include/patch/firedoge/profile/addons.json /home/$flouser/.mozilla/firefox/addons.json
 #   cp -f include/patch/firedoge/profile/addonStartup.json.lz4 /home/$flouser/.mozilla/firefox/addonStartup.json.lz4
 #   cp -f include/patch/firedoge/profile/content-prefs.sqlite /home/$flouser/.mozilla/firefox/content-prefs.sqlite
-#   cp -f include/patch/firedoge/profile/sessionstore.jsonlz4 /home/$flouser/.mozilla/firefox/sessionstore.jsonlz4
+   cp -f include/patch/firedoge/profile/sessionstore.jsonlz4 /home/$flouser/.mozilla/firefox/sessionstore.jsonlz4
 #   cp -f include/patch/firedoge/profile/cookies.sqlite /home/$flouser/.mozilla/firefox/cookies.sqlite
 #   cp -f include/patch/firedoge/profile/permissions.sqlite /home/$flouser/.mozilla/firefox/permissions.sqlite
 #   cp -f include/patch/firedoge/profile/places.sqlite /home/$flouser/.mozilla/firefox/places.sqlite
@@ -98,7 +101,7 @@ proceedpersonalizing () {
 #             cp -f ./addons.json ${D}
 #             cp -f ./addonStartup.json.lz4 ${D}
 #             cp -f ./content-prefs.sqlite ${D}
-#             cp -f ./sessionstore.jsonlz4 ${D}
+             cp -f ./sessionstore.jsonlz4 ${D}
 #             cp -f ./cookies.sqlite ${D}
 #             cp -f ./permissions.sqlite ${D}
 #             cp -f ./places.sqlite ${D}
@@ -125,7 +128,7 @@ done
 #   rm -f /home/$flouser/.mozilla/firefox/addons.json
 #   rm -f /home/$flouser/.mozilla/firefox/addonStartup.json.lz4
 #   rm -f /home/$flouser/.mozilla/firefox/content-prefs.sqlite
-#   rm -f /home/$flouser/.mozilla/firefox/sessionstore.jsonlz4
+   rm -f /home/$flouser/.mozilla/firefox/sessionstore.jsonlz4
 #   rm -f /home/$flouser/.mozilla/firefox/cookies.sqlite
 #   rm -f /home/$flouser/.mozilla/firefox/permissions.sqlite
 #   rm -f /home/$flouser/.mozilla/firefox/places.sqlite
@@ -142,7 +145,16 @@ done
 #   rm -rf /home/$flouser/.mozilla/firefox/storage
 #   rm -f /home/$flouser/.mozilla/firefox/extension-preferences.json
 #   rm -f /home/$flouser/.mozilla/firefox/storage-sync-v2.*
-   echo "[V] Done!"
+   (firedoge --flofirstuse &)
+#   CURRENT_WID=$(xdotool getwindowfocus)
+#   WID=$(xdotool search --name "Mozilla Firefox")
+#   export CURRENT_WID
+#   export WID
+#   bash /usr/lib/floflis/browser/firedoge/powers.sh
+   gnome-terminal --tab --title="Detecting doge 🐶 powers" -- /bin/sh -c 'cd /usr/lib/floflis/browser/firedoge; bash powers.sh; exec bash'
+   echo "(i) Partially installed."
+   echo "Now its up to you: install all the addons Firedoge needs."
+#   echo "(✓) Done!"
 }
 
 if [ "$(pidof firefox)" ]

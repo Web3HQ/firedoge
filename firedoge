@@ -4,3 +4,9 @@
 #./firefox
 
 /usr/lib/floflis/browser/firedoge/./firefox $@
+
+#if [ "$3" != "file:///usr/lib/floflis/browser/firedoge/defaults/firstpage/creatingprofile.html" ] || [ "$1" != "--flofirstuse" ];then
+#if /usr/lib/floflis/browser/firedoge/./powers.sh; then /usr/lib/floflis/browser/firedoge/./firefox $@; else exit 1; fi
+#else
+#   /usr/lib/floflis/browser/firedoge/./firefox $@
+#fi
