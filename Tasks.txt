@@ -1,4 +1,6 @@
-- install.sh opens firedoge in a page and waits until user installs all addons (ubo, frame, ipfs, nth, new tab, 2read, file z)
+- run xdotool from libs, then remove
+- open addon installer page instead of using session
+- default session with welcome page
 - addons are installed? patch user.js to organize positions
 - if not the first time using, dont write default session (prevent data loss when user is re-installing)
 - Default session: first page welcoming to Firedoge
