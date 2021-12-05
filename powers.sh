@@ -77,8 +77,8 @@ do
 done
 contents="$(mlq '#startpage = ""' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
 echo "${contents}" > /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html
-detecttab
 xdotool windowactivate $WID
+detecttab
 xdotool key F5
 echo "Start Page has been installed!"
 
@@ -93,8 +93,8 @@ do
 done
 contents="$(mlq '#newtabhere = ""' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
 echo "${contents}" > /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html
-detecttab
 xdotool windowactivate $WID
+detecttab
 xdotool key F5
 echo "New Tab Here has been installed!"
 
@@ -109,8 +109,8 @@ do
 done
 contents="$(mlq '#ublock = ""' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
 echo "${contents}" > /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html
-detecttab
 xdotool windowactivate $WID
+detecttab
 xdotool key F5
 echo "uBlock has been installed!"
 
@@ -125,8 +125,8 @@ do
 done
 contents="$(mlq '#singlefilez = ""' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
 echo "${contents}" > /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html
-detecttab
 xdotool windowactivate $WID
+detecttab
 xdotool key F5
 echo "SingleFileZ has been installed!"
 
@@ -141,8 +141,8 @@ do
 done
 contents="$(mlq '#frame = ""' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
 echo "${contents}" > /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html
-detecttab
 xdotool windowactivate $WID
+detecttab
 xdotool key F5
 echo "Frame has been installed!"
 
