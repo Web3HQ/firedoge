@@ -1,3 +1,10 @@
+If Floflis, change user agent with "Ubuntu; Floflis/19"
+https://blog.desdelinux.net/en/tips-how-to-change-the-firefox-user-agent/
+
+better way than "xdotool search --name "Firedoge" | sed 1q" for searching, as "Mozilla Firefox" previously worked better outputting only 1 line
+
+better way than detecting "*.default-default-2"; detect by reading the last entry of installs.ini
+
 - run xdotool from libs, then remove
 - open addon installer page instead of using session
 - default session with welcome page

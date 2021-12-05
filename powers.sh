@@ -1,5 +1,12 @@
 #!/bin/bash
 
+CURRENT_WID=$(xdotool getwindowfocus)
+#(firedoge --flofirstuse &)
+#touch pid.txt
+#(firedoge --flofirstuse & echo "$!" >> /media/daniella/B/git/Plasmmer/Plasmozill/firedoge/pid.txt)
+#firedoge --flofirstuse & echo $!
+#PID=$(echo $!)
+
 #sudo apt install xdotool
 
 echo "Detecting username..."
@@ -13,7 +20,7 @@ fi
 cd /home/$flouser/.mozilla/firefox
 for D in `find . -mindepth 1 -maxdepth 1 -type d`
 do
-   if printf -- '%s' "${D}" | egrep -q -- ".default-beta"
+   if printf -- '%s' "${D}" | egrep -q -- ".default-default-2"
       then
 #         echo "debug D - ${D}"
          pure=$(echo "${D}" | sed -E 's|^\.{1,2}/||')
@@ -21,23 +28,30 @@ do
 fi
 done
 
+#until [[ "$PID" != "" ]]
+#do
+#   sleep 2s
+#done
+#echo "$PID"
+
 #until [ "$(pidof firefox)" ] || [ "$(xdotool search --name "Mozilla Firefox")" ]
 #do
 #   echo "Waiting for Firedoge 🐶 to wake up..."
 #   sleep 5s
 #done
-until [ "$(xdotool search --name "Mozilla Firefox")" ]
+until [ "$(xdotool search --name "Welcome to Firedoge")" ]
 do
+#   PID=$(pidof firedoge | awk '{ print $NF }')
    echo "Waiting for Firedoge 🐶 to wake up..."
    sleep 2s
 done
 
 echo "Detecting doge 🐶 powers..."
-CURRENT_WID=$(xdotool getwindowfocus)
-WID=""$(xdotool search --name "Mozilla Firefox")""
-export WID
 #profilefolder="$(/home/$flouser/.mozilla/firefox/*.default-beta 1> /dev/null 2>&1)"
 #xdotool windowactivate $CURRENT_WID
+#PID=$(pidof firedoge | awk '{ print $NF }')
+WID=""$(xdotool search --name "Welcome to Firedoge")""
+export WID
 until [ -e /home/$flouser/.mozilla/firefox/${profilefolder}/extensions/{cd7623f4-730d-4f6a-9f6c-6679b44cd906}.xpi ]
 do
 #   echo "/home/$flouser/.mozilla/firefox/${profilefolder}/{cd7623f4-730d-4f6a-9f6c-6679b44cd906}.xpi"
@@ -48,9 +62,15 @@ do
 #   WID=""$(xdotool search --name "Mozilla Firefox")""
 #   xdotool search --name "Mozilla Firefox"
 #   echo "${WID}"
+#   echo "debug pid: $PID"
+#   echo "debug wid: $WID"
+   WID=""$(xdotool search --name "Welcome to Firedoge")""
+#   if [ $(xdotool search --name "Firedoge" | awk '{ print $NF }') = $(xdotool search --pid $PID | awk '{ print $NF }') ]];then WID=""$(xdotool search --pid $PID | awk '{ print $NF }')"";echo "Success"; fi
+#   echo "DEBUG pid: $PID"
+#   echo "DEBUG wid: $WID"
    xdotool windowactivate $WID
 done
-contents="$(mlq '#startpage = "💯 Installed!"' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
+contents="$(mlq '#startpage = ""' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
 echo "${contents}" > /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html
 xdotool windowactivate $WID
 xdotool key F5
@@ -64,7 +84,7 @@ do
    sleep 5s
    xdotool windowactivate $WID
 done
-contents="$(mlq '#newtabhere = "💯 Installed!"' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
+contents="$(mlq '#newtabhere = ""' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
 echo "${contents}" > /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html
 xdotool windowactivate $WID
 xdotool key F5
@@ -78,7 +98,7 @@ do
    sleep 5s
    xdotool windowactivate $WID
 done
-contents="$(mlq '#ublock = "💯 Installed!"' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
+contents="$(mlq '#ublock = ""' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
 echo "${contents}" > /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html
 xdotool windowactivate $WID
 xdotool key F5
@@ -92,7 +112,7 @@ do
    sleep 5s
    xdotool windowactivate $WID
 done
-contents="$(mlq '#singlefilez = "💯 Installed!"' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
+contents="$(mlq '#singlefilez = ""' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
 echo "${contents}" > /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html
 xdotool windowactivate $WID
 xdotool key F5
@@ -106,7 +126,7 @@ do
    sleep 5s
    xdotool windowactivate $WID
 done
-contents="$(mlq '#frame = "💯 Installed!"' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
+contents="$(mlq '#frame = ""' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
 echo "${contents}" > /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html
 xdotool windowactivate $WID
 xdotool key F5
@@ -120,15 +140,17 @@ do
    sleep 5s
    xdotool windowactivate $WID
 done
-contents="$(mlq '#ipfscompanion = "💯 Installed!"' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
+contents="$(mlq '#ipfscompanion = ""' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
 echo "${contents}" > /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html
 xdotool windowactivate $WID
-xdotool key F5
+#xdotool key Ctrl+w
+#xdotool key F5
 echo "IPFS has been installed!"
 
-xdotool windowactivate $WID;xdotool key Ctrl+w
+#xdotool windowactivate $WID;xdotool key Ctrl+w
 #sudo apt remove xdotool
 pkill -f xdotool
-pkill -f firefox
+pkill -f firedoge
+exit 0
 
-echo "(✓) Done!";exit 0
+#echo "(✓) Done!";exit 0

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Installing Plasmozill Firedoge..."
-tar --verbose -xf include/firefox/firefox-95.0b8.linux-x86_64.tar.bz2
+tar --verbose -xf include/firefox/firedoge-96.0a1-en-US.linux-x86_64.tar.bz2
 sudo mkdir /usr/lib/floflis
 sudo mkdir /usr/lib/floflis/browser
 sudo mv -f firefox /usr/lib/floflis/browser/firefox
@@ -9,7 +9,7 @@ rsync -av /usr/lib/floflis/browser/firefox/ /usr/lib/floflis/browser/firedoge
 sudo rm -rf /usr/lib/floflis/browser/firefox
 rsync -av include/pages/firstpage/ /usr/lib/floflis/browser/firedoge/defaults/firstpage
 cp -f powers.sh /usr/lib/floflis/browser/firedoge/powers.sh
-echo "- Installing Firefloflis in /usr/bin..."
+echo "- Installing Firedoge in /usr/bin..."
 #sudo cat > /usr/bin/firedoge << ENDOFFILE
 ##!/bin/bash
 #
@@ -28,8 +28,6 @@ sudo chmod +x /usr/bin/firedoge
 
 echo "Creating settings profile..."
 echo "[i] Its normal that your browser opens and closes."
-#firedoge
-#firedoge & disown firedoge 
 (firedoge -new-tab -url file:///usr/lib/floflis/browser/firedoge/defaults/firstpage/creatingprofile.html &) # give time for it to create a user profile
 
 echo "Detecting username..."
@@ -41,8 +39,7 @@ if [ -f /etc/floflis-release ]
 fi
 
 proceedpersonalizing () {
-   #pkill -9 firefox
-   pkill -f firefox
+   pkill -f firedoge
    echo "- Installing default theme and settings..."
 #>>>>>>>>> ni80y7u3.default-beta
    rsync -av include/patch/firedoge/profile/MaterialFox/ /home/$flouser/.mozilla/firefox/MaterialFox
@@ -89,7 +86,7 @@ proceedpersonalizing () {
 #         echo "It's there!"
 #fi
 
-       if printf -- '%s' "${D}" | egrep -q -- ".default-beta"
+       if printf -- '%s' "${D}" | egrep -q -- ".default-default-2"
           then
 #            printf "${D}"
              cp -r -f ./MaterialFox/chrome ${D}
@@ -146,24 +143,24 @@ done
 #   rm -f /home/$flouser/.mozilla/firefox/extension-preferences.json
 #   rm -f /home/$flouser/.mozilla/firefox/storage-sync-v2.*
    (firedoge --flofirstuse &)
+   gnome-terminal --tab --title="Detecting doge 🐶 powers" -- /bin/sh -c 'cd /usr/lib/floflis/browser/firedoge; bash powers.sh; exec bash'
 #   CURRENT_WID=$(xdotool getwindowfocus)
 #   WID=$(xdotool search --name "Mozilla Firefox")
 #   export CURRENT_WID
 #   export WID
 #   bash /usr/lib/floflis/browser/firedoge/powers.sh
-   gnome-terminal --tab --title="Detecting doge 🐶 powers" -- /bin/sh -c 'cd /usr/lib/floflis/browser/firedoge; bash powers.sh; exec bash'
-   echo "(i) Partially installed."
-   echo "Now its up to you: install all the addons Firedoge needs."
-#   echo "(✓) Done!"
+#   echo "(i) Partially installed."
+#   echo "Now its up to you: install all the addons Firedoge needs."
+   echo "(✓) Done!"
 }
 
-if [ "$(pidof firefox)" ]
+if [ "$(pidof firedoge)" ]
    then
       sleep 5
 #      if compgen -G "*.default-release" > /dev/null; then
 #      echo "pattern exists!"
 #fi
-      if ls /home/$flouser/.mozilla/firefox/*.default-beta 1> /dev/null 2>&1; then
+      if ls /home/$flouser/.mozilla/firefox/*.default-default-2 1> /dev/null 2>&1; then
          proceedpersonalizing
          else
             echo "Installation didn't succeed. Try opening Firedoge icon and re-installing it."
