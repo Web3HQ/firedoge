@@ -34,8 +34,10 @@ echo "Detecting username..."
 if [ -f /etc/floflis-release ]
    then
       flouser=$(jq -r '.name' /1/config/user.json)
+      isfloflis="true"
    else
       flouser=$(logname)
+      isfloflis="false"
 fi
 
 proceedpersonalizing () {
@@ -44,6 +46,12 @@ proceedpersonalizing () {
 #>>>>>>>>> ni80y7u3.default-beta
    rsync -av include/patch/firedoge/profile/MaterialFox/ /home/$flouser/.mozilla/firefox/MaterialFox
    cp -f include/patch/firedoge/profile/user-patch.js /home/$flouser/.mozilla/firefox/MaterialFox/user.js
+   if [[ "$isfloflis" = "true" ]]
+   then
+      cat >> /home/$flouser/.mozilla/firefox/MaterialFox/user.js <<EOF
+user_pref("general.useragent.override", "Mozilla/5.0 (X11; Ubuntu; Floflis/19; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0 Firedoge/96.0");
+EOF
+fi
 #   cp -f include/patch/firedoge/profile/extension-settings.json /home/$flouser/.mozilla/firefox/extension-settings.json
 #   rsync -av include/patch/firedoge/profile/extensions/ /home/$flouser/.mozilla/firefox/extensions
 #   cp -f include/patch/firedoge/profile/extensions.json /home/$flouser/.mozilla/firefox/extensions.json

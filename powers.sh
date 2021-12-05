@@ -44,14 +44,12 @@ do
 #   PID=$(pidof firedoge | awk '{ print $NF }')
    echo "Waiting for Firedoge 🐶 to wake up..."
    sleep 2s
-done
+done;WID=""$(xdotool search --name "Welcome to Firedoge")""
 
 echo "Detecting doge 🐶 powers..."
 #profilefolder="$(/home/$flouser/.mozilla/firefox/*.default-beta 1> /dev/null 2>&1)"
 #xdotool windowactivate $CURRENT_WID
 #PID=$(pidof firedoge | awk '{ print $NF }')
-WID=""$(xdotool search --name "Welcome to Firedoge")""
-export WID
 until [ -e /home/$flouser/.mozilla/firefox/${profilefolder}/extensions/{cd7623f4-730d-4f6a-9f6c-6679b44cd906}.xpi ]
 do
 #   echo "/home/$flouser/.mozilla/firefox/${profilefolder}/{cd7623f4-730d-4f6a-9f6c-6679b44cd906}.xpi"
@@ -64,7 +62,7 @@ do
 #   echo "${WID}"
 #   echo "debug pid: $PID"
 #   echo "debug wid: $WID"
-   WID=""$(xdotool search --name "Welcome to Firedoge")""
+#   WID=""$(xdotool search --name "Welcome to Firedoge")""
 #   if [ $(xdotool search --name "Firedoge" | awk '{ print $NF }') = $(xdotool search --pid $PID | awk '{ print $NF }') ]];then WID=""$(xdotool search --pid $PID | awk '{ print $NF }')"";echo "Success"; fi
 #   echo "DEBUG pid: $PID"
 #   echo "DEBUG wid: $WID"
