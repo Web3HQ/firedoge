@@ -50,22 +50,6 @@ detecttab
 xdotool key F5
 echo "Start Page has been installed!"
 
-until [ -e /home/$flouser/.mozilla/firefox/${profilefolder}/extensions/newtabhere@pollti.xpi ]
-do
-   echo "Waiting to find New Tab Here installed..."
-   sleep 15s
-   xdotool windowactivate $CURRENT_WID
-   sleep 5s
-   xdotool windowactivate $WID
-   detecttab
-done
-contents="$(mlq '#newtabhere = ""' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
-echo "${contents}" > /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html
-xdotool windowactivate $WID
-detecttab
-xdotool key F5
-echo "New Tab Here has been installed!"
-
 until [ -e /home/$flouser/.mozilla/firefox/${profilefolder}/extensions/uBlock0@raymondhill.net.xpi ]
 do
    echo "Waiting to find uBlock installed..."

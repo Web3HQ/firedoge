@@ -1,3 +1,5 @@
+- first page welcoming to Firedoge
+
 better way than detecting "*.default-default-2"; detect by reading the last entry of installs.ini
 
 - run xdotool from libs, then remove
@@ -5,7 +7,6 @@ better way than detecting "*.default-default-2"; detect by reading the last entr
 - default session with welcome page
 - addons are installed? patch user.js to organize positions
 - if not the first time using, dont write default session (prevent data loss when user is re-installing)
-- Default session: first page welcoming to Firedoge
 
 better way than "xdotool search --name "Firedoge" | sed 1q" for searching, as "Mozilla Firefox" previously worked better outputting only 1 line
 
@@ -13,7 +14,14 @@ better way than "xdotool search --name "Firedoge" | sed 1q" for searching, as "M
 
 https://stackoverflow.com/questions/3075682/how-to-set-the-process-name-of-a-shell-script
 
-- install, configure and start IPFS Desktop
+- install, configure and start IPFS Desktop (if not installed)
+- install, configure and start Frame (if not installed)
+
+
+
+
+
+
 https://github.com/intika/Librefox
 -
 https://askubuntu.com/questions/984136/how-to-recompile-firefox-57-debian-package-using-debuild
