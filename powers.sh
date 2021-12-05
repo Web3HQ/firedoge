@@ -1,11 +1,6 @@
 #!/bin/bash
 
 CURRENT_WID=$(xdotool getwindowfocus)
-#(firedoge --flofirstuse &)
-#touch pid.txt
-#(firedoge --flofirstuse & echo "$!" >> /media/daniella/B/git/Plasmmer/Plasmozill/firedoge/pid.txt)
-#firedoge --flofirstuse & echo $!
-#PID=$(echo $!)
 
 #sudo apt install xdotool
 
@@ -22,23 +17,10 @@ for D in `find . -mindepth 1 -maxdepth 1 -type d`
 do
    if printf -- '%s' "${D}" | egrep -q -- ".default-default-2"
       then
-#         echo "debug D - ${D}"
          pure=$(echo "${D}" | sed -E 's|^\.{1,2}/||')
          profilefolder="$pure"
 fi
 done
-
-#until [[ "$PID" != "" ]]
-#do
-#   sleep 2s
-#done
-#echo "$PID"
-
-#until [ "$(pidof firefox)" ] || [ "$(xdotool search --name "Mozilla Firefox")" ]
-#do
-#   echo "Waiting for Firedoge 🐶 to wake up..."
-#   sleep 5s
-#done
 
 detecttab () {
 if [[ "$(xdotool search --name "Welcome to Firedoge")" = "" ]];then (firedoge -new-tab -url file:///usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html &) fi
@@ -46,32 +28,18 @@ if [[ "$(xdotool search --name "Welcome to Firedoge")" = "" ]];then (firedoge -n
 
 until [ "$(xdotool search --name "Welcome to Firedoge")" ]
 do
-#   PID=$(pidof firedoge | awk '{ print $NF }')
    echo "Waiting for Firedoge 🐶 to wake up..."
    sleep 3s
    detecttab
 done;WID=""$(xdotool search --name "Welcome to Firedoge")""
 
 echo "Detecting doge 🐶 powers..."
-#profilefolder="$(/home/$flouser/.mozilla/firefox/*.default-beta 1> /dev/null 2>&1)"
-#xdotool windowactivate $CURRENT_WID
-#PID=$(pidof firedoge | awk '{ print $NF }')
 until [ -e /home/$flouser/.mozilla/firefox/${profilefolder}/extensions/{cd7623f4-730d-4f6a-9f6c-6679b44cd906}.xpi ]
 do
-#   echo "/home/$flouser/.mozilla/firefox/${profilefolder}/{cd7623f4-730d-4f6a-9f6c-6679b44cd906}.xpi"
    echo "Waiting to find Start Page installed..."
    sleep 15s
    xdotool windowactivate $CURRENT_WID
    sleep 5s
-#   WID=""$(xdotool search --name "Mozilla Firefox")""
-#   xdotool search --name "Mozilla Firefox"
-#   echo "${WID}"
-#   echo "debug pid: $PID"
-#   echo "debug wid: $WID"
-#   WID=""$(xdotool search --name "Welcome to Firedoge")""
-#   if [ $(xdotool search --name "Firedoge" | awk '{ print $NF }') = $(xdotool search --pid $PID | awk '{ print $NF }') ]];then WID=""$(xdotool search --pid $PID | awk '{ print $NF }')"";echo "Success"; fi
-#   echo "DEBUG pid: $PID"
-#   echo "DEBUG wid: $WID"
    xdotool windowactivate $WID
    detecttab
 done

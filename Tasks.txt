@@ -1,5 +1,3 @@
-better way than "xdotool search --name "Firedoge" | sed 1q" for searching, as "Mozilla Firefox" previously worked better outputting only 1 line
-
 better way than detecting "*.default-default-2"; detect by reading the last entry of installs.ini
 
 - run xdotool from libs, then remove
@@ -9,19 +7,12 @@ better way than detecting "*.default-default-2"; detect by reading the last entr
 - if not the first time using, dont write default session (prevent data loss when user is re-installing)
 - Default session: first page welcoming to Firedoge
 
-- Detect if x86 32 or 64 bit
-- Custom build (icon, name)
-- hicolor and .desktop icon
+better way than "xdotool search --name "Firedoge" | sed 1q" for searching, as "Mozilla Firefox" previously worked better outputting only 1 line
+
+- Detect if x86 32, x86 64, arm64 and armhf
 
 https://stackoverflow.com/questions/3075682/how-to-set-the-process-name-of-a-shell-script
 
-first step: script installs firefox and turns into plasmozill firefloflis:
-- some personalizations, copy from testing user folder (Install the Firefox extension Simple new tab button (https://addons.mozilla.org/en-US/firefox/addon/simple-new-tab-button/).
-Select Menu > Customize.
-Remove the "new tab button" on Firefox's tab bar using drag and drop.
-Move the new tab button of the Simple new tab button extension to the rightmost location on the tab bar of the browser. This places the new tab button at a fixed location on the rightmost side of the tab bar in Firefox.
-Restart Firefox.)
-- install addons
 - install, configure and start IPFS Desktop
 https://github.com/intika/Librefox
 -

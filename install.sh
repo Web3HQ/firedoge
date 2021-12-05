@@ -9,26 +9,6 @@ rsync -av /usr/lib/floflis/browser/firefox/ /usr/lib/floflis/browser/firedoge
 sudo rm -rf /usr/lib/floflis/browser/firefox
 rsync -av include/pages/firstpage/ /usr/lib/floflis/browser/firedoge/defaults/firstpage
 cp -f powers.sh /usr/lib/floflis/browser/firedoge/powers.sh
-echo "- Installing Firedoge in /usr/bin..."
-#sudo cat > /usr/bin/firedoge << ENDOFFILE
-##!/bin/bash
-#
-#cd /usr/lib/floflis/browser/firedoge
-#./firefox
-#ENDOFFILE
-
-#sudo echo "$firedogebin" >> /usr/bin/firedoge
-
-#sudo cat /usr/bin/firedoge
-
-sudo cp -f firedoge /usr/bin/firedoge
-
-echo "- Turning Firedoge into a executable..."
-sudo chmod +x /usr/bin/firedoge
-
-echo "Creating settings profile..."
-echo "[i] Its normal that your browser opens and closes."
-(firedoge -new-tab -url file:///usr/lib/floflis/browser/firedoge/defaults/firstpage/creatingprofile.html &) # give time for it to create a user profile
 
 echo "Detecting username..."
 if [ -f /etc/floflis-release ]
@@ -39,6 +19,21 @@ if [ -f /etc/floflis-release ]
       flouser=$(logname)
       isfloflis="false"
 fi
+
+echo "Installing icons..."
+sudo rsync -av include/patch/firedoge/app/icons/ /usr/share/icons/hicolor
+sudo chmod -R a+rwX /usr/share/icons/hicolor && sudo chown $flouser:$flouser /usr/share/icons/hicolor
+sudo cp -f include/patch/firedoge/app/usr-share-applications-firedoge /usr/share/applications/firedoge.desktop
+
+echo "- Installing Firedoge in /usr/bin..."
+sudo cp -f firedoge /usr/bin/firedoge
+
+echo "- Turning Firedoge into a executable..."
+sudo chmod +x /usr/bin/firedoge
+
+echo "Creating settings profile..."
+echo "[i] Its normal that your browser opens and closes."
+(firedoge -new-tab -url file:///usr/lib/floflis/browser/firedoge/defaults/firstpage/creatingprofile.html &) # give time for it to create a user profile
 
 proceedpersonalizing () {
    pkill -f firedoge
@@ -162,21 +157,26 @@ done
    echo "(✓) Done!"
 }
 
-if [ "$(pidof firedoge)" ]
-   then
-      sleep 5
-#      if compgen -G "*.default-release" > /dev/null; then
-#      echo "pattern exists!"
-#fi
-      if ls /home/$flouser/.mozilla/firefox/*.default-default-2 1> /dev/null 2>&1; then
-         proceedpersonalizing
-         else
-            echo "Installation didn't succeed. Try opening Firedoge icon and re-installing it."
-            echo "What happened: Firedoge settings profile wasn't been created"
-            echo "(sorry but it isn't a helpful error message; BTW it will be improved <3)"
-fi
+until [ "$(pidof firedoge)" ]
+do
+   echo "Waiting for Firedoge 🐶 to wake up..."
+   sleep 3s
+done
+
+sleep 5
+if ls /home/$flouser/.mozilla/firefox/*.default-default-2 1> /dev/null 2>&1; then
+   proceedpersonalizing
    else
       echo "Installation didn't succeed. Try opening Firedoge icon and re-installing it."
-      echo "What happened: Firedoge didn't openned"
+      echo "What happened: Firedoge settings profile wasn't been created"
       echo "(sorry but it isn't a helpful error message; BTW it will be improved <3)"
 fi
+
+#if [ "$(pidof firedoge)" ]
+#   then
+#      
+#   else
+#      echo "Installation didn't succeed. Try opening Firedoge icon and re-installing it."
+#      echo "What happened: Firedoge didn't openned"
+#      echo "(sorry but it isn't a helpful error message; BTW it will be improved <3)"
+#fi
