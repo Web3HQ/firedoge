@@ -39,11 +39,17 @@ done
 #   echo "Waiting for Firedoge 🐶 to wake up..."
 #   sleep 5s
 #done
+
+detecttab () {
+if [[ "$(xdotool search --name "Welcome to Firedoge")" = "" ]];then (firedoge -new-tab -url file:///usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html &) fi
+}
+
 until [ "$(xdotool search --name "Welcome to Firedoge")" ]
 do
 #   PID=$(pidof firedoge | awk '{ print $NF }')
    echo "Waiting for Firedoge 🐶 to wake up..."
-   sleep 2s
+   sleep 3s
+   detecttab
 done;WID=""$(xdotool search --name "Welcome to Firedoge")""
 
 echo "Detecting doge 🐶 powers..."
@@ -67,9 +73,11 @@ do
 #   echo "DEBUG pid: $PID"
 #   echo "DEBUG wid: $WID"
    xdotool windowactivate $WID
+   detecttab
 done
 contents="$(mlq '#startpage = ""' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
 echo "${contents}" > /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html
+detecttab
 xdotool windowactivate $WID
 xdotool key F5
 echo "Start Page has been installed!"
@@ -81,9 +89,11 @@ do
    xdotool windowactivate $CURRENT_WID
    sleep 5s
    xdotool windowactivate $WID
+   detecttab
 done
 contents="$(mlq '#newtabhere = ""' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
 echo "${contents}" > /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html
+detecttab
 xdotool windowactivate $WID
 xdotool key F5
 echo "New Tab Here has been installed!"
@@ -95,9 +105,11 @@ do
    xdotool windowactivate $CURRENT_WID
    sleep 5s
    xdotool windowactivate $WID
+   detecttab
 done
 contents="$(mlq '#ublock = ""' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
 echo "${contents}" > /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html
+detecttab
 xdotool windowactivate $WID
 xdotool key F5
 echo "uBlock has been installed!"
@@ -109,9 +121,11 @@ do
    xdotool windowactivate $CURRENT_WID
    sleep 5s
    xdotool windowactivate $WID
+   detecttab
 done
 contents="$(mlq '#singlefilez = ""' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
 echo "${contents}" > /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html
+detecttab
 xdotool windowactivate $WID
 xdotool key F5
 echo "SingleFileZ has been installed!"
@@ -123,9 +137,11 @@ do
    xdotool windowactivate $CURRENT_WID
    sleep 5s
    xdotool windowactivate $WID
+   detecttab
 done
 contents="$(mlq '#frame = ""' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
 echo "${contents}" > /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html
+detecttab
 xdotool windowactivate $WID
 xdotool key F5
 echo "Frame has been installed!"
@@ -137,13 +153,14 @@ do
    xdotool windowactivate $CURRENT_WID
    sleep 5s
    xdotool windowactivate $WID
+   detecttab
 done
 contents="$(mlq '#ipfscompanion = ""' /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html)" && \
 echo "${contents}" > /usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html
-xdotool windowactivate $WID
 #xdotool key Ctrl+w
 #xdotool key F5
 echo "IPFS has been installed!"
+xdotool windowactivate $CURRENT_WID
 
 #xdotool windowactivate $WID;xdotool key Ctrl+w
 #sudo apt remove xdotool
