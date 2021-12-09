@@ -1,3 +1,8 @@
+- Hide top bar
+
+- Bar colors addon
+- Organize tab groups addon
+
 - first page welcoming to Firedoge
 
 better way than detecting "*.default-default-2"; detect by reading the last entry of installs.ini
