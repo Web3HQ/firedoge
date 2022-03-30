@@ -50,6 +50,8 @@ https://developer.gnome.org/integration-guide/stable/desktop-files.html.en
 https://stackoverflow.com/questions/13632385/adding-menu-items-to-gnome-menu-or-unity
 /usr/share/icons/hicolor
 
+support for DML
+
 Also include Fhrome:
 tar --verbose -xf ungoogled-chromium_87.0.4280.141-1.1_linux.tar.xz
 
