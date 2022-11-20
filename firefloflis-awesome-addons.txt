@@ -1,11 +1,14 @@
+newtab addon: button to view the background
+
+- View .MD (Markdown) files
 https://addons.mozilla.org/pt-BR/firefox/addon/markdown-viewer-webext/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
 https://addons.mozilla.org/pt-BR/firefox/addon/markdown-viewer-chrome/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
 
+- Reading mode of a site, at IPFS and shareable
 https://addons.mozilla.org/en-US/firefox/addon/2read/
 
+- Like a "DualSpace" at a phone, but at a browser
 https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/
-
-newtab addon: button to view the background
 
 https://addons.mozilla.org/pt-BR/firefox/addon/onetab/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
 
