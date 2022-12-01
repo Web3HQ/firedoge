@@ -15,6 +15,14 @@ better way than detecting "*.default-default-2"; detect by reading the last entr
 
 better way than "xdotool search --name "Firedoge" | sed 1q" for searching, as "Mozilla Firefox" previously worked better outputting only 1 line
 
+firedoge new flag: gfx.webrender.all preferences / true
+-
+New Tab settings: cute GIFs or standard backgrounds
+    background: url(https://source.unsplash.com/1600x900/?nature) center center no-repeat #f2f5f9;
+    background-size: cover;
+-
+- New step for Native addon, using Py. Then, implement sh.
+
 - Detect if x86 32, x86 64, arm64 and armhf
 
 https://stackoverflow.com/questions/3075682/how-to-set-the-process-name-of-a-shell-script
