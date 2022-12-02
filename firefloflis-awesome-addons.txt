@@ -4,6 +4,14 @@ newtab addon: button to view the background
 https://addons.mozilla.org/pt-BR/firefox/addon/markdown-viewer-webext/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
 https://addons.mozilla.org/pt-BR/firefox/addon/markdown-viewer-chrome/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
 
+https://www.google.com/search?channel=fs&client=ubuntu&q=firefox+mhtml+support
+https://discourse.mozilla.org/t/opening-mhtml-files-with-firefox/53495/3
+open .mhtml files using Chromium
+
+https://addons.mozilla.org/pt-BR/firefox/addon/webrtc-meeting/
+
+https://addons.mozilla.org/pt-BR/firefox/addon/flashplayer-swf-to-html/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
+
 - Reading mode of a site, at IPFS and shareable
 https://addons.mozilla.org/en-US/firefox/addon/2read/
 
