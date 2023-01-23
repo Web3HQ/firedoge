@@ -19,6 +19,7 @@ https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/
 -
 
 https://addons.mozilla.org/en-US/firefox/addon/mastodon-simplified-federation/
+https://github.com/raikasdev/mastodon4-redirect
 
 https://addons.mozilla.org/pt-BR/firefox/addon/https-everywhere/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=recommended
 
