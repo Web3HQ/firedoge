@@ -1,12 +1,10 @@
 newtab addon: button to view the background
 
+https://addons.mozilla.org/pt-BR/firefox/addon/tree-style-tab/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
+
 - View .MD (Markdown) files
 https://addons.mozilla.org/pt-BR/firefox/addon/markdown-viewer-webext/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
 https://addons.mozilla.org/pt-BR/firefox/addon/markdown-viewer-chrome/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
-
-https://www.google.com/search?channel=fs&client=ubuntu&q=firefox+mhtml+support
-https://discourse.mozilla.org/t/opening-mhtml-files-with-firefox/53495/3
-open .mhtml files using Chromium
 
 https://addons.mozilla.org/pt-BR/firefox/addon/webrtc-meeting/
 
@@ -18,18 +16,24 @@ https://addons.mozilla.org/en-US/firefox/addon/2read/
 - Like a "DualSpace" at a phone, but at a browser
 https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/
 
-https://addons.mozilla.org/pt-BR/firefox/addon/onetab/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
-
-https://addons.mozilla.org/pt-BR/firefox/addon/tree-style-tab/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
-
 -
 
-https://addons.mozilla.org/pt-BR/firefox/addon/view-page-archive/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
-https://addons.mozilla.org/pt-BR/firefox/addon/search_by_image/
-https://addons.mozilla.org/pt-BR/firefox/addon/enhancer-for-youtube/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=recommended
+https://addons.mozilla.org/en-US/firefox/addon/mastodon-simplified-federation/
+
 https://addons.mozilla.org/pt-BR/firefox/addon/https-everywhere/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=recommended
+
+https://addons.mozilla.org/pt-BR/firefox/addon/search_by_image/
+
+https://addons.mozilla.org/pt-BR/firefox/addon/view-page-archive/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
+
+https://addons.mozilla.org/pt-BR/firefox/addon/enhancer-for-youtube/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=recommended
+
 https://addons.mozilla.org/pt-BR/firefox/addon/darkreader/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=recommended
+
 https://addons.mozilla.org/pt-BR/firefox/addon/to-google-translate/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=recommended
+
+https://addons.mozilla.org/pt-BR/firefox/addon/draw-on-page/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
+https://addons.mozilla.org/pt-BR/firefox/addon/web-paint/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
 
 -
 
@@ -37,5 +41,9 @@ https://addons.mozilla.org/pt-BR/firefox/addon/undoclosetabbutton/?utm_source=ad
 https://github.com/M-Reimer/undoclosetab/issues/120
 https://addons.mozilla.org/pt-BR/firefox/addon/close-other-tabs-menu/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
 
-https://addons.mozilla.org/pt-BR/firefox/addon/draw-on-page/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
-https://addons.mozilla.org/pt-BR/firefox/addon/web-paint/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
+https://www.google.com/search?channel=fs&client=ubuntu&q=firefox+mhtml+support
+https://discourse.mozilla.org/t/opening-mhtml-files-with-firefox/53495/3
+open .mhtml files using Chromium
+
+https://addons.mozilla.org/pt-BR/firefox/addon/onetab/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
+BEHAVIOR: closes ALL tabs and convert them into a list. But new tabs (that you may be using as a marker), it doesn't consider!
