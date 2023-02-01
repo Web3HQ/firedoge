@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Internet
+Exec=firedoge %u
+Comment=Explore the Internet in the funniest way; no matter what's your age
+Terminal=false
+Icon=firedoge
+Type=Application

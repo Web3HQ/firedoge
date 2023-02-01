@@ -41,6 +41,8 @@ proceedpersonalizing () {
 #>>>>>>>>> ni80y7u3.default-beta
    rsync -av include/patch/firedoge/profile/MaterialFox/ /home/$flouser/.mozilla/firefox/MaterialFox
    cp -f include/patch/firedoge/profile/user-patch.js /home/$flouser/.mozilla/firefox/MaterialFox/user.js
+   echo "Creating Desktop shortcut..."
+   cp include/Internet.desktop /home/$flouser/Desktop/
    if [[ "$isfloflis" = "true" ]]
    then
       cat >> /home/$flouser/.mozilla/firefox/MaterialFox/user.js <<EOF
