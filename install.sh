@@ -89,7 +89,7 @@ fi
 #         echo "It's there!"
 #fi
 
-       if printf -- '%s' "${D}" | egrep -q -- ".default-default-2"
+       if printf -- '%s' "${D}" | egrep -q -- ".default-default"
           then
 #            printf "${D}"
              cp -r -f ./MaterialFox/chrome ${D}
@@ -164,7 +164,7 @@ do
 done
 
 sleep 5
-if ls /home/$flouser/.mozilla/firefox/*.default-default-2 1> /dev/null 2>&1; then
+if ls /home/$flouser/.mozilla/firefox/*.default-default 1> /dev/null 2>&1; then
    proceedpersonalizing
    else
       echo "Installation didn't succeed. Try opening Firedoge icon and re-installing it."

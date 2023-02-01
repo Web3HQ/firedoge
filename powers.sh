@@ -1,8 +1,8 @@
 #!/bin/bash
 
-CURRENT_WID=$(xdotool getwindowfocus)
+sudo apt install xdotool
 
-#sudo apt install xdotool
+CURRENT_WID=$(xdotool getwindowfocus)
 
 echo "Detecting username..."
 if [ -f /etc/floflis-release ]
@@ -15,7 +15,7 @@ fi
 cd /home/$flouser/.mozilla/firefox
 for D in `find . -mindepth 1 -maxdepth 1 -type d`
 do
-   if printf -- '%s' "${D}" | egrep -q -- ".default-default-2"
+   if printf -- '%s' "${D}" | egrep -q -- ".default-default"
       then
          pure=$(echo "${D}" | sed -E 's|^\.{1,2}/||')
          profilefolder="$pure"
