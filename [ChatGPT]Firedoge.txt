@@ -1,0 +1,16 @@
+"I have a Firefox wrapper that is a Bash script, called firedoge. Resides in /usr/bin/firedoge.
+
+It runs Firefox with "(firefox @ &)"
+
+How this script can set its own icon and name in Gnome's System Monitor?"
+
+You can set the icon and name of the firedoge process that appears in Gnome's System Monitor by using the --class and --icon options of the firefox command. Here's an updated version of your script that sets these options:
+
+#!/bin/bash
+
+# Set the name and icon of the Firefox process
+firefox --class firedoge --icon /path/to/icon.png @ &
+
+# You can replace "/path/to/icon.png" with the path to the icon you want to use.
+
+This should make the firedoge process appear in Gnome's System Monitor with the specified name and icon. Note that the name and icon may take a few seconds to update in the System Monitor after the process starts.
