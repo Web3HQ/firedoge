@@ -1,0 +1,56 @@
+"Can my custom Firefox come with custom addons that appear out-of-the-box fully working (and with their welcome pages opening normally on first startup)?
+
+Can I also set what it's first startup page will be loaded from?"
+
+Yes, it is possible to create a custom Firefox build with pre-installed add-ons and a custom homepage.
+
+To create a custom Firefox build with pre-installed add-ons, you can use the Firefox Build System (https://firefox-source-docs.mozilla.org/setup/build/buildsystem/index.html). This build system allows you to customize various aspects of Firefox, including adding pre-installed add-ons.
+
+You can specify which add-ons you want to include by modifying the firefox/config/mozconfigs/macosx64/common file (for macOS), firefox/config/mozconfigs/linux64/common file (for Linux), or firefox/config/mozconfigs/win64/common file (for Windows). You can use the MOZ_ADDON_PACKAGES variable to list the add-ons you want to include. For example, to include the uBlock Origin add-on, you can add the following line to the common file:
+MOZ_ADDON_PACKAGES += /path/to/ublock_origin.xpi
+
+To set a custom homepage for your Firefox build, you can modify the firefox/config/mozconfigs/macosx64/common file (for macOS), firefox/config/mozconfigs/linux64/common file (for Linux), or firefox/config/mozconfigs/win64/common file (for Windows). You can use the MOZ_STARTUP_HOMEPAGE variable to specify the URL of the homepage you want to use. For example, to set the homepage to https://www.example.com, you can add the following line to the common file:
+MOZ_STARTUP_HOMEPAGE=https://www.example.com
+
+With these modifications, you can build a custom Firefox with pre-installed add-ons and a custom homepage.
+
+"Can my Firefox custom build come with its custom settings and flags, such as starting where user were left (restoring tabs automatically) and enabling blur (backdrop filter) support?"
+
+Yes, you can create a custom Firefox build with your own preferences and settings. To do so, you can use Mozilla's build tools like mozconfig and mach to build your own custom Firefox browser with your desired preferences.
+
+To enable tab restore on startup, you can add the following line to your user.js file:
+user_pref("browser.sessionstore.resume_from_crash", true);
+
+To enable backdrop filter support, you can add the following line to your userContent.css file:
+html, body {
+  background-color: transparent !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+These are just examples, but there are many other preferences and settings that you can customize in Firefox. You can find more information about customizing Firefox on the Mozilla website.
+
+"Enabling backdrop filter, I mean, is at custom flags level not CSS."
+
+Yes, enabling the backdrop filter is done at the browser level, not at the CSS level. You can enable this feature in Firefox by setting the layout.css.backdrop-filter.enabled preference to true in the about:config page. If you are creating a custom build of Firefox, you can set this preference to true by default.
+
+"I mean, in my custom build."
+
+Yes, you can include custom settings and flags in your custom Firefox build. To enable backdrop filter support, you would need to include the appropriate flag in the about:config settings. Here are the steps to do so:
+1. Open your custom Firefox build and type "about:config" in the address bar.
+2. Click on the "I accept the risk!" button to proceed.
+3. In the search bar, type "layout.css.backdrop-filter.enabled".
+4. Double-click on the preference to change its value to "true".
+
+Once you have enabled this flag, you can use the backdrop filter property in your CSS to apply the effect to an element.
+
+"I mean, not from user side but defining these flags in my custom Firefox build."
+
+Yes, it is possible to define custom flags and settings in a custom Firefox build. Firefox allows for customization through the use of configuration files, which can set preferences, configure add-ons, enable or disable features, and much more.
+
+For example, to enable backdrop filter support in your custom Firefox build, you can add the following line to your user.js file:
+user_pref("layout.css.backdrop-filter.enabled", true);
+
+Similarly, you can set other preferences and flags in the user.js file as well. To set the preference to restore tabs automatically when the browser starts, you can use the following line:
+user_pref("browser.startup.page", 3);
+
+There are many other preferences and settings that you can customize in a Firefox build, and you can find more information about them in the Firefox documentation.
