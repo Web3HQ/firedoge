@@ -1,8 +1,13 @@
 - reproducible dependencies
+- Use webpresent
+
+Firedoge will come initially without Internet-depending addons such as ABP. This will save package size both for Firedoge and Floflis ISO. Also, startpage wont come as an addon!
+- startpage magic sites recommend: https://www.fotor.com/features/background-remover
+-
+blk and reason: https://www.jornaldacidadeonline.com.br/noticias/47780/dono-de-loja-lacradora-celebra-a-taxacao-que-atingiu-milhoes-de-brasileiros.amp
 
 - Install icons using linux-icons-builder
 - SVG icon (also update in Floflis SitePress and ubiquity-slideshow)
-- Use webpresent
 
 - Hide top bar
 
