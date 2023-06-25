@@ -48,3 +48,10 @@ open .mhtml files using Chromium
 
 https://addons.mozilla.org/pt-BR/firefox/addon/onetab/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
 BEHAVIOR: closes ALL tabs and convert them into a list. But new tabs (that you may be using as a marker), it doesn't consider!
+
+
+Useful addons Firedoge should recommend:
+https://chrome.google.com/webstore/detail/telescope-ai-powered-web/lpohhpokidkkffkeaklfocgpkdlkpkki?hl=pt-br
+
+Useful niche addons Firedoge should recommend:
+https://chrome.google.com/webstore/detail/voat-reddit-comments-on-y/amlfbbehleledmbphnielafhieceggal?hl=pt-br
