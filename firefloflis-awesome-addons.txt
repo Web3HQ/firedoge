@@ -1,3 +1,5 @@
+https://addons.mozilla.org/en-US/firefox/addon/joinfire/
+
 newtab addon: button to view the background
 
 https://addons.mozilla.org/pt-BR/firefox/addon/tree-style-tab/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
