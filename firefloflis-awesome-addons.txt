@@ -1,4 +1,5 @@
 https://addons.mozilla.org/en-US/firefox/addon/joinfire/
+https://addons.mozilla.org/en-US/firefox/addon/revoke-cash/
 
 newtab addon: button to view the background
 
