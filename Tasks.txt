@@ -1,3 +1,7 @@
+- Firedoge Control addon
+- ask Cursor to create about:control pointing to the Firedoge Control addon
+- ask Cursor to point to the Firedoge Control, from the Firefox Settings
+
 - reproducible dependencies
 - Use webpresent
 
