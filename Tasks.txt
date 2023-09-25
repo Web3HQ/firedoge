@@ -1,4 +1,6 @@
-- Firedoge Control addon
+fl/frdg don't install single-file-z if CPU+RAM is lower/same of my PC (PC not notebook)
+
+- Firedoge Control (settings) addon
 - ask Cursor to create about:control pointing to the Firedoge Control addon
 - ask Cursor to point to the Firedoge Control, from the Firefox Settings
 
