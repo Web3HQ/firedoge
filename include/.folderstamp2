@@ -1,0 +1,102 @@
+This folder: /usr/bin
+
+  File: ./Brand.pptx
+  Size: 603379    	Blocks: 1184       IO Block: 4096   regular file
+Device: 8,4	Inode: 1467904     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2021-12-04 21:18:01.487237000 -0300
+Modify: 2021-12-04 21:17:16.095159200 -0300
+Change: 2021-12-04 21:17:16.149107400 -0300
+ Birth: -
+IPFS hash: QmP7giuGqZeXz7T29sY3dwe7f8jx1U5d9kc27GYHZVGUwa
+------------------------------
+  File: ./Brand.pptx@git
+  Size: 0         	Blocks: 0          IO Block: 4096   directory
+Device: 8,4	Inode: 1467293     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2021-12-04 21:46:29.352373300 -0300
+Modify: 2021-12-04 21:17:59.405592600 -0300
+Change: 2021-12-04 21:17:59.405592600 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./firefox
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,4	Inode: 3924466     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-02-07 23:03:29.320062000 -0300
+Modify: 2023-02-07 23:03:24.659773300 -0300
+Change: 2023-02-07 23:03:24.659773300 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./Firefox addon -> /media/daniella/Seagate Expansion Drive/1/personal/projects/Desktop/Firefox addon
+  Size: 81        	Blocks: 1          IO Block: 4096   symbolic link
+Device: 8,4	Inode: 1402568     Links: 1
+Access: (0777/lrwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-03-27 18:36:54.422203100 -0300
+Modify: 2023-03-27 18:36:54.422203100 -0300
+Change: 2023-03-27 18:36:54.422203100 -0300
+ Birth: -
+IPFS hash: QmWfEDmkKYwcebHwB993qcePFCbgghWfC2ovpKbkKQ4vve
+------------------------------
+  File: ./icon.pptx
+  Size: 10991461  	Blocks: 21472      IO Block: 4096   regular file
+Device: 8,4	Inode: 3439796     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2021-12-04 20:32:06.967027500 -0300
+Modify: 2021-11-17 20:23:37.895632100 -0300
+Change: 2021-11-17 20:23:38.366633900 -0300
+ Birth: -
+IPFS hash: QmW2ronGVFerRabVFLNbf1jtFgbDhQgrNNT7MjnQe7nSnp
+------------------------------
+  File: ./icon.pptx@git
+  Size: 0         	Blocks: 0          IO Block: 4096   directory
+Device: 8,4	Inode: 1467620     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2021-12-04 21:46:29.357864500 -0300
+Modify: 2021-12-04 20:32:18.787490900 -0300
+Change: 2021-12-04 20:32:18.787490900 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./Internet.desktop
+  Size: 169       	Blocks: 1          IO Block: 4096   regular file
+Device: 8,4	Inode: 4068201     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-02-07 21:08:59.041669400 -0300
+Modify: 2021-12-21 20:52:15.483897600 -0300
+Change: 2023-02-01 13:37:24.367215200 -0300
+ Birth: -
+IPFS hash: QmVxY3v2jp6AfnTudmjxmaUrQPKXsiVSeD3YvwLASYqkNi
+------------------------------
+  File: ./pages
+  Size: 0         	Blocks: 0          IO Block: 4096   directory
+Device: 8,4	Inode: 1467360     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2021-12-04 21:46:29.361864200 -0300
+Modify: 2021-12-03 19:18:40.855272500 -0300
+Change: 2021-12-03 19:18:40.855272500 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./patch
+  Size: 0         	Blocks: 0          IO Block: 4096   directory
+Device: 8,4	Inode: 3924545     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2021-12-04 21:46:29.362864200 -0300
+Modify: 2021-11-16 22:06:36.691275000 -0300
+Change: 2021-11-17 18:09:48.396938600 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./ungoogled-chromium
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,4	Inode: 3924822     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-03-05 17:40:15.730292600 -0300
+Modify: 2023-03-05 17:40:15.717334800 -0300
+Change: 2023-03-05 17:40:15.717334800 -0300
+ Birth: -
+IPFS hash: 
+------------------------------

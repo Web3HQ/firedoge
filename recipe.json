@@ -1,0 +1,64 @@
+{
+	"florecipe-v": "1.0",
+	"name": "flobrowser",
+
+	"firefox": {
+		"recipe-json": {
+			"ipfs": "",
+			"github": ""
+		},
+		"source": {
+			"ipfs": "",
+			"github": ""
+		},
+		"linux-i386": {
+			"ipfs": "",
+			"github": ""
+		},
+		"linux-amd64": {
+			"ipfs": "",
+			"github": ""
+		}
+	},
+	
+	"ungoogled-chromium": {
+		"recipejson": {
+			"ipfs": "",
+			"github": ""
+		},
+		"source": {
+			"ipfs": "",
+			"github": ""
+		},
+		"linux-amd64": {
+			"ipfs": "",
+			"github": ""
+		}
+	},
+
+	"cjdns": {
+		"source": {
+			"dat": "3bceb38747c1a8c3162fcdb081277fbcdcf921cc6ad6e4b15629e94ced92ca84",
+			"github": "https://github.com/cjdelisle/cjdns.git"
+		},
+		"windows-i386": {
+			"ipfs": "QmTqH64TSr9JqKNCzTKKtacQjtV4yVTcM9VJNnqJx1ZTHx",
+			"github": "https://github.com/interfect/cjdns-installer/releases/download/v0.10-proto20.2/cjdns-installer-0.10-proto20.2.exe"
+		}
+	},
+	"go": {}
+	"yggdrasil": {
+		"source": {
+			"dat": "22d9d61be80ec4d1a64f317bc89fd8413ec6de87779814ce00a13be40cd624f0",
+			"github": "https://github.com/yggdrasil-network/yggdrasil-go.git"
+		},
+		"deb-i386": {
+			"ipfs": "Qmb8evvGaYbFsq3jL8tm5BnLw4fahTtswhrG9L98mwXF2c",
+			"circleci": "https://2203-115685026-gh.circle-artifacts.com/0/yggdrasil-0.3.11-i386.deb"
+		},
+		"windows-i386": {
+			"ipfs": "Qmd6XvAda2jToof9P3enHof2qeXdVcxBrt6sCTbNxAqEzh",
+			"circleci": "https://2203-115685026-gh.circle-artifacts.com/0/yggdrasil-0.3.11-windows-i386.exe"
+		}
+	}
+}

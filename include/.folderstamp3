@@ -1,0 +1,62 @@
+This folder: /media/daniella/B/git/Web3HQ/firedoge/include
+
+  File: ./firefox
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,20	Inode: 3924466     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-22 17:14:24.580882900 -0300
+Modify: 2023-09-22 17:14:00.529316400 -0300
+Change: 2023-09-22 17:14:00.529316400 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./Firefox addons -> /media/daniella/Seagate Expansion Drive/1/personal/projects/Desktop/Firefox addons
+  Size: 82        	Blocks: 1          IO Block: 4096   symbolic link
+Device: 8,20	Inode: 4113297     Links: 1
+Access: (0777/lrwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-07-01 18:59:12.117669800 -0300
+Modify: 2023-07-01 18:59:12.117669800 -0300
+Change: 2023-07-01 18:59:12.117669800 -0300
+ Birth: -
+IPFS hash: QmVrFGHeaF5XFfNcBxAXLKZq4jdksd9NZCt52gJub3SkHS
+------------------------------
+  File: ./Internet.desktop
+  Size: 169       	Blocks: 1          IO Block: 4096   regular file
+Device: 8,20	Inode: 4068201     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-02-07 21:08:59.041669400 -0300
+Modify: 2021-12-21 20:52:15.483897600 -0300
+Change: 2023-02-01 13:37:24.367215200 -0300
+ Birth: -
+IPFS hash: QmVxY3v2jp6AfnTudmjxmaUrQPKXsiVSeD3YvwLASYqkNi
+------------------------------
+  File: ./pages
+  Size: 0         	Blocks: 0          IO Block: 4096   directory
+Device: 8,20	Inode: 1467360     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-08-24 01:03:38.356795700 -0300
+Modify: 2021-12-03 19:18:40.855272500 -0300
+Change: 2021-12-03 19:18:40.855272500 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./patch
+  Size: 0         	Blocks: 0          IO Block: 4096   directory
+Device: 8,20	Inode: 3924545     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-08-24 01:03:38.395106700 -0300
+Modify: 2021-11-16 22:06:36.691275000 -0300
+Change: 2021-11-17 18:09:48.396938600 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./ungoogled-chromium
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,20	Inode: 3924822     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-11-06 21:22:51.168551500 -0300
+Modify: 2023-11-06 21:22:51.145754900 -0300
+Change: 2023-11-06 21:22:51.145754900 -0300
+ Birth: -
+IPFS hash: 
+------------------------------

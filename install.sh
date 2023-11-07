@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Installing Plasmozill Firedoge..."
-tar --verbose -xf include/firefox/firedoge-96.0a1-en-US.linux-x86_64.tar.bz2
+tar --verbose -xf include/firefox/firedoge-119.0a1-en-US.linux-x86_64.tar.bz2
 sudo mkdir /usr/lib/floflis
 sudo mkdir /usr/lib/floflis/browser
 sudo mv -f firefox /usr/lib/floflis/browser/firefox
@@ -46,7 +46,7 @@ proceedpersonalizing () {
    if [[ "$isfloflis" = "true" ]]
    then
       cat >> /home/$flouser/.mozilla/firefox/MaterialFox/user.js <<EOF
-user_pref("general.useragent.override", "Mozilla/5.0 (X11; Ubuntu; Floflis/19; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0 Firedoge/96.0");
+user_pref("general.useragent.override", "Mozilla/5.0 (X11; Ubuntu; Floflis/19; Linux x86_64; rv:119.0) Gecko/20100101 Firefox/119.0 Firedoge/119.0");
 EOF
 fi
 #   cp -f include/patch/firedoge/profile/extension-settings.json /home/$flouser/.mozilla/firefox/extension-settings.json
