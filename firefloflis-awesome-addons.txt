@@ -1,4 +1,9 @@
+https://addons.mozilla.org/pt-BR/firefox/addon/minerblock-origin/
+https://addons.mozilla.org/pt-BR/firefox/addon/nominer-block-coin-miners/
+https://addons.mozilla.org/pt-BR/firefox/addon/cryptomining-blocker/
+
 https://addons.mozilla.org/en-US/firefox/addon/joinfire/
++
 https://addons.mozilla.org/en-US/firefox/addon/revoke-cash/
 
 newtab addon: button to view the background
