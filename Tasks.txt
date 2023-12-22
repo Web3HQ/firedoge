@@ -1,5 +1,10 @@
 fl/frdg don't install single-file-z if CPU+RAM is lower/same of my PC (PC not notebook)
 
+Firedoge:
+- revisit https://discourse.mozilla.org/t/nativemessaging-addon-with-error-in-console-attempt-to-postmessage-on-disconnected-port/74740
+--
+-? firedoge blk: https://www.metropoles.com/colunas/mario-sabino/o-jogo-bruto-do-pt-contra-romeu-zema, https://www.estadao.com.br/emais/gente/mia-khalifa-atriz-demitida-por-apoiar-ataque-terrorista-em-israel-acumula-polemicas-veja-nprec/ + https://www.estadao.com.br/emais/gente/mia-khalifa-e-demitida-apos-apoiar-ataque-terrorista-em-israel-entenda-nprec/ + https://www.terra.com.br/diversao/gente/mia-khalifa-e-demitida-apos-apoiar-ataque-terrorista-em-israel-entenda,95a3ee27eb073d34445b0c9d97676eb9njrqml9d.html (plagiarism)
+
 - Firedoge Control (settings) addon
 - ask Cursor to create about:control pointing to the Firedoge Control addon
 - ask Cursor to point to the Firedoge Control, from the Firefox Settings
