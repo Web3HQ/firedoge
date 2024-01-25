@@ -1,10 +1,10 @@
 #!/bin/bash
 
 echo "Installing Plasmozill Firedoge..."
-tar --verbose -xf include/firefox/firedoge-119.0a1-en-US.linux-x86_64.tar.bz2
+tar --verbose -xf include/firefox/firedoge-124.0a1-en-US.linux-x86_64.tar.bz2
 sudo mkdir /usr/lib/floflis
 sudo mkdir /usr/lib/floflis/browser
-sudo mv -f firefox /usr/lib/floflis/browser/firefox
+sudo mv -f bin /usr/lib/floflis/browser/firefox
 rsync -av /usr/lib/floflis/browser/firefox/ /usr/lib/floflis/browser/firedoge
 sudo rm -rf /usr/lib/floflis/browser/firefox
 rsync -av include/pages/firstpage/ /usr/lib/floflis/browser/firedoge/defaults/firstpage
@@ -40,15 +40,16 @@ proceedpersonalizing () {
    echo "- Installing default theme and settings..."
 #>>>>>>>>> ni80y7u3.default-beta
    rsync -av include/patch/firedoge/profile/MaterialFox/ /home/$flouser/.mozilla/firefox/MaterialFox
-   cp -f include/patch/firedoge/profile/user-patch.js /home/$flouser/.mozilla/firefox/MaterialFox/user.js
+#   cp -f include/patch/firedoge/profile/user-patch.js /home/$flouser/.mozilla/firefox/MaterialFox/user.js
    echo "Creating Desktop shortcut..."
    cp include/Internet.desktop /home/$flouser/Desktop/
-   if [[ "$isfloflis" = "true" ]]
-   then
-      cat >> /home/$flouser/.mozilla/firefox/MaterialFox/user.js <<EOF
-user_pref("general.useragent.override", "Mozilla/5.0 (X11; Ubuntu; Floflis/19; Linux x86_64; rv:119.0) Gecko/20100101 Firefox/119.0 Firedoge/119.0");
-EOF
-fi
+#   if [[ "$isfloflis" = "true" ]]
+#   then
+#      cat >> /home/$flouser/.mozilla/firefox/MaterialFox/user.js <<EOF
+#user_pref("general.useragent.override", "Mozilla/5.0 (X11; Ubuntu; Floflis/25; Linux x86_64; rv:119.0) Gecko/20100101 Firefox/124.0 Firedoge/124.0");
+#EOF
+#fi
+
 #   cp -f include/patch/firedoge/profile/extension-settings.json /home/$flouser/.mozilla/firefox/extension-settings.json
 #   rsync -av include/patch/firedoge/profile/extensions/ /home/$flouser/.mozilla/firefox/extensions
 #   cp -f include/patch/firedoge/profile/extensions.json /home/$flouser/.mozilla/firefox/extensions.json
@@ -95,7 +96,7 @@ fi
           then
 #            printf "${D}"
              cp -r -f ./MaterialFox/chrome ${D}
-             cp -f ./MaterialFox/user.js ${D}
+#             cp -f ./MaterialFox/user.js ${D}
 #             cp -f ./extension-settings.json ${D}
 #             rsync -av ./extensions/ ${D}/extensions
 #             cp -f ./extensions.json ${D}
@@ -166,7 +167,7 @@ do
 done
 
 sleep 5
-if ls /home/$flouser/.mozilla/firefox/*.default-default 1> /dev/null 2>&1; then
+if ls /home/$flouser/.mozilla/firefox/*.default-default* 1> /dev/null 2>&1; then
    proceedpersonalizing
    else
       echo "Installation didn't succeed. Try opening Firedoge icon and re-installing it."

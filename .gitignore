@@ -1,1 +1,16 @@
 *.pptx
+*.tar*
+*.xpi
+
+*.*lz4
+*.db
+
+include/ungoogled-chromium/ungoogled-chromium_*_linux/
+include/ungoogled-chromium/chrome-crx-downloader
+include/patch/firedoge/profile/*.sql*
+include/patch/firedoge/app/
+include/patch/firedoge/profile/MaterialFox/
+include/patch/firedoge/profile/datareporting/
+include/patch/firedoge/profile/lock
+include/patch/firedoge/profile/sessionstore-backups/
+include/patch/firedoge/profile/storage/

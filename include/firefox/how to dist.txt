@@ -1,1 +1,1 @@
-./mach build && ./mach package && cd /media/daniella/A/hg/mozilla-central/obj-x86_64-pc-linux-gnu/dist && tar -chjvf firedoge-96.0a1-en-US.linux-x86_64.tar.bz2 firefox && echo "Firedoge is ready!"
+./mach build && ./mach package && cd /media/daniella/A/hg/mozilla-central/obj-x86_64-pc-linux-gnu/dist && tar -chjvf firedoge-124.0a1-en-US.linux-x86_64.tar.bz2 bin && echo "Firedoge is ready!"
