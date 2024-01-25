@@ -1,0 +1,112 @@
+This folder: /media/daniella/B/git/Web3HQ/firedoge/include/firefox
+
+  File: ./firedoge-119.0a1-en-US.linux-x86_64.tar.bz2
+  Size: 21046940  	Blocks: 41112      IO Block: 4096   regular file
+Device: 8,20	Inode: 4176925     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2024-01-25 17:03:31.827492900 -0300
+Modify: 2023-09-22 17:11:32.066197700 -0300
+Change: 2023-09-22 17:14:00.916524900 -0300
+ Birth: 2023-09-22 17:14:00.529241700 -0300
+IPFS hash: QmaNhFE1iqXhdRzRZvP4TcHFTPznyoQMgttx2e9rFnkuz4
+------------------------------
+  File: ./firedoge-119.0a1-en-US.linux-x86_64.tar.bz2.weborigin
+  Size: 105       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,20	Inode: 206792      Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2024-01-25 18:50:39.483975900 -0300
+Modify: 2024-01-25 17:49:15.433857600 -0300
+Change: 2024-01-25 17:49:24.216873600 -0300
+ Birth: 2024-01-25 17:49:15.433857600 -0300
+IPFS hash: QmQu6EUdjMSyM79k5kbWfwy4T6iZRVpNYZjShprT8McxqR
+------------------------------
+  File: ./firedoge-124.0a1-en-US.linux-x86_64.tar.bz2
+  Size: 991155337 	Blocks: 1935856    IO Block: 4096   regular file
+Device: 8,20	Inode: 206791      Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2024-01-25 17:38:56.226713700 -0300
+Modify: 2024-01-25 17:35:15.734710000 -0300
+Change: 2024-01-25 17:48:28.275028800 -0300
+ Birth: 2024-01-25 17:48:24.018670900 -0300
+IPFS hash: QmdLeCCLNzsipKTWk2MytEkEuYCpBAzjE1FGSfaetWAjq3
+------------------------------
+  File: ./firedoge-124.0a1-en-US.linux-x86_64.tar.bz2.cid
+  Size: 47        	Blocks: 8          IO Block: 4096   regular file
+Device: 8,20	Inode: 3661620     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2024-01-25 18:50:39.615999800 -0300
+Modify: 2024-01-25 17:39:53.999148000 -0300
+Change: 2024-01-25 17:48:28.571053700 -0300
+ Birth: 2024-01-25 17:48:28.571053700 -0300
+IPFS hash: QmdjfP69kq4QGhp6wKLBJ9ET2y2f3cJP7jbB2Hdew3vdUQ
+------------------------------
+  File: ./firedoge-124.0a1-en-US.linux-x86_64.tar.bz2.weborigin
+  Size: 105       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,20	Inode: 3620682     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2024-01-25 18:50:39.615999800 -0300
+Modify: 2024-01-25 17:49:58.848259900 -0300
+Change: 2024-01-25 17:50:05.989361800 -0300
+ Birth: 2024-01-25 17:49:58.848259900 -0300
+IPFS hash: QmUch4h8ZJND7oxHu7yL3BcxbQ5oJ5bkiUB3ZBbGsk2GCN
+------------------------------
+  File: ./firedoge-96.0a1.en-US.linux-x86_64.normandy.json
+  Size: 3028      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,20	Inode: 3919866     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2022-12-24 18:29:29.716001800 -0300
+Modify: 2021-12-04 23:19:52.506248000 -0300
+Change: 2021-12-04 23:36:26.132126200 -0300
+ Birth: 2021-12-04 23:36:26.128057900 -0300
+IPFS hash: QmQA5cSFnyXk4eED1ifiDhksgAvyYKP5ea238UiowV5HJW
+------------------------------
+  File: ./firedoge-96.0a1-en-US.linux-x86_64.tar.bz2
+  Size: 91847023  	Blocks: 179392     IO Block: 4096   regular file
+Device: 8,20	Inode: 3919865     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-04-30 13:13:49.398080400 -0300
+Modify: 2021-12-04 23:33:58.150187000 -0300
+Change: 2021-12-04 23:35:34.257277300 -0300
+ Birth: 2021-12-04 23:35:33.449680200 -0300
+IPFS hash: QmPfsfoLKCDeuGU6Rq8mAC3tGAtghFrsxKCTY4uGXfN1rj
+------------------------------
+  File: ./firedoge-96.0a1-en-US.linux-x86_64.tar.bz2.webpresent
+  Size: 104       	Blocks: 0          IO Block: 4096   regular file
+Device: 8,20	Inode: 4089001     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-04-07 00:09:23.902393700 -0300
+Modify: 2023-02-07 23:03:15.537952000 -0300
+Change: 2023-02-07 23:03:24.659771300 -0300
+ Birth: 2023-02-07 23:03:15.537234800 -0300
+IPFS hash: Qmcx2uYu8c63jA14Q7XK9nuXa71DbTCGm6pYrGV5Y8bJk4
+------------------------------
+  File: ./firedoge-96.0a1.en-US.linux-x86_64.txt
+  Size: 15        	Blocks: 0          IO Block: 4096   regular file
+Device: 8,20	Inode: 3919867     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2024-01-25 18:29:35.936642100 -0300
+Modify: 2021-12-04 23:18:35.969630000 -0300
+Change: 2021-12-04 23:36:26.139717000 -0300
+ Birth: 2021-12-04 23:36:26.136138800 -0300
+IPFS hash: QmYqPZ7m2bPRimxDvP5crLGqtLjrNG5TqsnuZQT9cnvqoE
+------------------------------
+  File: ./how to dist.txt
+  Size: 194       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,20	Inode: 91894       Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2024-01-25 17:51:00.819797100 -0300
+Modify: 2024-01-25 17:28:14.475733600 -0300
+Change: 2024-01-25 17:28:14.791506000 -0300
+ Birth: 2024-01-25 17:28:14.467739400 -0300
+IPFS hash: QmZWfemesDC8U7hkATBJwftX8Sj19e5d2pqwomstzrnfqo
+------------------------------
+  File: ./source
+  Size: 0         	Blocks: 0          IO Block: 4096   directory
+Device: 8,20	Inode: 3434390     Links: 1
+Access: (0755/drwxr-xr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-08-24 01:03:38.276121600 -0300
+Modify: 2021-11-18 12:53:54.484014700 -0300
+Change: 2021-11-18 12:53:56.667031700 -0300
+ Birth: 2021-11-18 12:53:54.484014700 -0300
+IPFS hash: 
+------------------------------
