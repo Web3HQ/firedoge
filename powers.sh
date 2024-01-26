@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sudo apt install xdotool
+sudo apt install xmlstarlet
 
 CURRENT_WID=$(xdotool getwindowfocus)
 
@@ -35,8 +36,10 @@ done;WID=""$(xdotool search --name "Welcome to Firedoge")""
 
 echo "Detecting doge 🐶 powers..."
 
-until [ -e /home/$flouser/.mozilla/firefox/${profilefolder}/extensions/{cd7623f4-730d-4f6a-9f6c-6679b44cd906}.xpi ]
+until [ -f /home/"$flouser"/.mozilla/firefox/"${profilefolder}"/extensions/{cd7623f4-730d-4f6a-9f6c-6679b44cd906}.xpi ]
 do
+echo "DEBUG | FLOUSER: $flouser"
+echo "DEBUG | PROFILE FOLDER: ${profilefolder}"
    echo "Waiting to find Start Page installed..."
    sleep 15s
    xdotool windowactivate $CURRENT_WID
@@ -51,8 +54,10 @@ detecttab
 xdotool key F5
 echo "Start Page has been installed!"
 
-until [ -e /home/$flouser/.mozilla/firefox/${profilefolder}/extensions/panorama-tab-groups@example.com.xpi ]
+until [ -f /home/"$flouser"/.mozilla/firefox/"${profilefolder}"/extensions/panorama-tab-groups@example.com.xpi ]
 do
+echo "DEBUG | FLOUSER: $flouser"
+echo "DEBUG | PROFILE FOLDER: ${profilefolder}"
    echo "Waiting to find PanoramaTabGroups installed..."
    sleep 15s
    xdotool windowactivate $CURRENT_WID
@@ -67,8 +72,10 @@ detecttab
 xdotool key F5
 echo "PanoramaTabGroups has been installed!"
 
-until [ -e /home/$flouser/.mozilla/firefox/${profilefolder}/extensions/@vivaldi-fox.xpi ]
+until [ -f /home/"$flouser"/.mozilla/firefox/"${profilefolder}"/extensions/@vivaldi-fox.xpi ]
 do
+echo "DEBUG | FLOUSER: $flouser"
+echo "DEBUG | PROFILE FOLDER: ${profilefolder}"
    echo "Waiting to find VivaldiFox installed..."
    sleep 15s
    xdotool windowactivate $CURRENT_WID
@@ -83,8 +90,10 @@ detecttab
 xdotool key F5
 echo "VivaldiFox has been installed!"
 
-until [ -e /home/$flouser/.mozilla/firefox/${profilefolder}/extensions/uBlock0@raymondhill.net.xpi ]
+until [ -f /home/"$flouser"/.mozilla/firefox/"${profilefolder}"/extensions/uBlock0@raymondhill.net.xpi ]
 do
+echo "DEBUG | FLOUSER: $flouser"
+echo "DEBUG | PROFILE FOLDER: ${profilefolder}"
    echo "Waiting to find uBlock installed..."
    sleep 15s
    xdotool windowactivate $CURRENT_WID
@@ -99,7 +108,7 @@ detecttab
 xdotool key F5
 echo "uBlock has been installed!"
 
-#until [ -e /home/$flouser/.mozilla/firefox/${profilefolder}/extensions/{e4db92bc-3213-493d-bd9e-5ff2afc72da6}.xpi ]
+#until [ -f /home/"$flouser"/.mozilla/firefox/"${profilefolder}"/extensions/{e4db92bc-3213-493d-bd9e-5ff2afc72da6}.xpi ]
 #do
 #   echo "Waiting to find SingleFileZ installed..."
 #   sleep 15s
@@ -115,8 +124,10 @@ echo "uBlock has been installed!"
 #xdotool key F5
 #echo "SingleFileZ has been installed!"
 
-until [ -e /home/$flouser/.mozilla/firefox/${profilefolder}/extensions/{77691beb-4c53-48de-ab20-6589a537717a}.xpi ]
+until [ -f /home/"$flouser"/.mozilla/firefox/"${profilefolder}"/extensions/{77691beb-4c53-48de-ab20-6589a537717a}.xpi ]
 do
+echo "DEBUG | FLOUSER: $flouser"
+echo "DEBUG | PROFILE FOLDER: ${profilefolder}"
    echo "Waiting to find Frame installed..."
    sleep 15s
    xdotool windowactivate $CURRENT_WID
@@ -131,8 +142,10 @@ detecttab
 xdotool key F5
 echo "Frame has been installed!"
 
-until [ -e /home/$flouser/.mozilla/firefox/${profilefolder}/extensions/ipfs-firefox-addon@lidel.org.xpi ]
+until [ -f /home/"$flouser"/.mozilla/firefox/"${profilefolder}"/extensions/ipfs-firefox-addon@lidel.org.xpi ]
 do
+echo "DEBUG | FLOUSER: $flouser"
+echo "DEBUG | PROFILE FOLDER: ${profilefolder}"
    echo "Waiting to find IPFS installed..."
    sleep 15s
    xdotool windowactivate $CURRENT_WID
