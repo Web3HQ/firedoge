@@ -5,12 +5,12 @@ sudo apt install xdotool
 CURRENT_WID=$(xdotool getwindowfocus)
 
 echo "Detecting username..."
-if [ -f /etc/floflis-release ]
-   then
-      flouser=$(jq -r '.name' /1/config/user.json)
-   else
+#if [ -f /etc/floflis-release ]
+#   then
+#      flouser=$(jq -r '.name' /1/config/user.json)
+#   else
       flouser=$(logname)
-fi
+#fi
 
 cd /home/$flouser/.mozilla/firefox
 for D in `find . -mindepth 1 -maxdepth 1 -type d`

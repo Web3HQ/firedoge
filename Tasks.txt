@@ -1,5 +1,7 @@
 fl/frdg don't install single-file-z if CPU+RAM is lower/same of my PC (PC not notebook)
 
+- re-enable getting username from /1/config/user.json (first, ensure it is fixed on Floflis/Central)
+
 Firedoge:
 - revisit https://discourse.mozilla.org/t/nativemessaging-addon-with-error-in-console-attempt-to-postmessage-on-disconnected-port/74740
 --

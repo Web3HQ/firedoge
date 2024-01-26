@@ -11,14 +11,14 @@ rsync -av include/pages/firstpage/ /usr/lib/floflis/browser/firedoge/defaults/fi
 cp -f powers.sh /usr/lib/floflis/browser/firedoge/powers.sh
 
 echo "Detecting username..."
-if [ -f /etc/floflis-release ]
-   then
-      flouser=$(jq -r '.name' /1/config/user.json)
+#if [ -f /etc/floflis-release ]
+#   then
+#      flouser=$(jq -r '.name' /1/config/user.json)
       isfloflis="true"
-   else
+#   else
       flouser=$(logname)
-      isfloflis="false"
-fi
+#      isfloflis="false"
+#fi
 
 echo "Installing icons..."
 sudo rsync -av include/patch/firedoge/app/icons/ /usr/share/icons/hicolor
