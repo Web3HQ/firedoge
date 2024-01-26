@@ -1,3 +1,5 @@
+better way than detecting "*.default-default-2"/"*.default-default"; detect by reading the last entry of installs.ini?
+
 fl/frdg don't install single-file-z if CPU+RAM is lower/same of my PC (PC not notebook)
 
 - re-enable getting username from /1/config/user.json (first, ensure it is fixed on Floflis/Central)
@@ -34,9 +36,7 @@ https://www.gazetadopovo.com.br/vozes/polzonoff/esquerda-culpa-bolsonaro-por-des
 - Bar colors addon
 - Organize tab groups addon
 
-- first page welcoming to Firedoge
-
-better way than detecting "*.default-default-2"/"*.default-default"; detect by reading the last entry of installs.ini
+-? first page welcoming to Firedoge
 
 - run xdotool from libs, then remove
 - open addon installer page instead of using session
